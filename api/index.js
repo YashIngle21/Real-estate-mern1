@@ -1,6 +1,9 @@
-const express = require("express")
-const mongoose = require("mongoose");
-const dotenv = require("dotenv")
+import express from "express"
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import router from "./routes/user.route.js"
+
+const app = express();
 
 dotenv.config();
 mongoose.connect(process.env.MONGO)
@@ -11,8 +14,14 @@ mongoose.connect(process.env.MONGO)
     });
 
 
-const app = express();
+//app.use(express.json());
+app.use("/api/user",router);
 
 app.listen(3000,()=>{
     console.log("serever running on port 3000.!")
 })
+
+
+
+
+
