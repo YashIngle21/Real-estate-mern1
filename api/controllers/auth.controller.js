@@ -1,10 +1,10 @@
 import User from "../models/user.model.js";
-import bcrpytjs from "bcryptjs"
+import bcrpyt from "bcrypt"
 
 
 const signup = async (req,res,next)=>{
     const { username, email, password} = req.body
-    const hashedPasssword = bcrpytjs.hashSync(password,10);
+    const hashedPasssword = bcrpyt.hashSync(password , 10);
     const newUser = new User({username, email, password:hashedPasssword })
     
     try{
