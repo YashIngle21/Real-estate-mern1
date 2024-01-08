@@ -17,8 +17,8 @@ const userSchema = new mongoose.Schema({
     },
     avatar:{
         type: String,
-        default: "https://imgs.search.brave.com/VJpsdQKea8qD1KSdHcoDR4fh9R_G-qxhFcPH5mwZvkY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nZmluZC5jb20v/aW1nLzMyMGJnLnBu/Zw",
-    },
+        default: "https://imgs.search.brave.com/EcFUtdr1k2nbyt4wiuTlcb7F3dLQlp0ZcjyQHhI4sEI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTEz/Nzg1MTU3NC9waG90/by9wcm9maWxlLW9m/LXlvdW5nLXdvbWFu/cy1mYWNlLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1GQjIy/UmIwM3NZZkNiTl9M/MmNoQ2psNHVTN2JU/VTdWN1U5WEUySEZx/SFpRPQ"
+    }
 },{ timestamps: true });
 
 const User = mongoose.model("User",userSchema);
