@@ -1,0 +1,1 @@
+## This is a Real Esatae Website where you can view listings of different Real estates. Build using MERN stack 
